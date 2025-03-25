@@ -55,7 +55,7 @@ jobs:
 
   docker:
     name: ${{ matrix.title }}
-    runs-on: devzero-ubuntu-24.04-large
+    runs-on: devzero-ubuntu-24.04
     if: ${{ !contains(github.event.pull_request.title, 'WIP') }}
     timeout-minutes: 60
     strategy:
